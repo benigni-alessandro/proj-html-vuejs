@@ -1,0 +1,79 @@
+.container{
+  &.subscribe{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: $color-white;
+    @include flex-col-center-center;
+    .row{
+      .col-12{
+        @include flex-col-center-center;
+        .subscribe_content{
+          @include flex-col-center-center;
+          .subscribe_content-text{
+            @include flex-col-center-center;
+            small{
+              color: $color-grey;
+            }
+
+          }
+          .send_email{
+            margin-top: 50px;
+            input{
+              height: 40px;
+              width: 500px;
+            }
+            button{
+              background-color: $color-orange;
+              color: $color-white;
+              border: 1px solid transparent;
+              height: 40px;
+              small{
+                margin: 0 25px;
+              }
+            }
+          }
+          p{
+            margin-top: 30px;
+            font-size: 10px;
+            color: $color-grey;
+          }
+        }
+      }
+    }
+  }
+  &.cornice_immagini{
+    max-width: 100%;
+    height: 220px;
+    .row{
+      .col-12{
+        padding: 0px;
+        @include flex-row-wrap;
+        img{
+          height: 220px;
+          width: calc(100% / 4);
+        }
+      }
+    }
+  }
+  &.utilities{
+    max-width: 100%;
+    .row{
+      .col-12{
+        padding: $padding-10-col;
+        .logo-social{
+          img{
+
+          }
+          .socials{
+            
+          }
+        }
+      }
+    }
+  }
+}
