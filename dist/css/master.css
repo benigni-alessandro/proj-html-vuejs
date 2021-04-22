@@ -1,0 +1,624 @@
+.input-group.flex-nowrap {
+  height: 60px;
+}
+.input-group.flex-nowrap span.input-group-text {
+  border-right: 0px;
+  background-color: white;
+}
+.input-group.flex-nowrap span.input-group-text i {
+  color: #afafaf;
+}
+.input-group.flex-nowrap .form-control {
+  border-left: 0px;
+  color: #6a6b6c;
+}
+.input-group.flex-nowrap .form-control:focus {
+  border-color: transparent;
+  box-shadow: 0px 0px 0px 0px;
+}
+
+.container.social_icons {
+  height: 30px;
+}
+.container.social_icons .row .col-12 {
+  padding: 0 10%;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.container.social_icons .row .col-12 .advertsite {
+  width: auto;
+}
+.container.social_icons .row .col-12 .advertsite a {
+  text-decoration: none;
+  color: #333338;
+}
+.container.social_icons .row .col-12 .advertsite a span {
+  font-size: 10px;
+  margin-right: 20px;
+}
+.container.social_icons .row .col-12 .advertsite a span button {
+  color: white;
+  background-color: #fc7525;
+  border: 0px;
+  border-radius: 5px;
+}
+.container.social_icons .row .col-12 .icons {
+  width: auto;
+}
+.container.social_icons .row .col-12 .icons a i {
+  color: #6a6b6c;
+  padding: 0 10px;
+}
+.container.logo {
+  height: 122px;
+}
+.container.logo .row {
+  height: 100%;
+}
+.container.logo .row .col-12 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.container.logo .row .col-12 img {
+  height: 100%;
+}
+.container.menu-bar {
+  height: 70px;
+}
+.container.menu-bar .row {
+  height: 100%;
+}
+.container.menu-bar .row .col-12 {
+  padding: 0 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.container.menu-bar .row .col-12 ul {
+  height: 100%;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+.container.menu-bar .row .col-12 ul li {
+  cursor: pointer;
+  text-decoration: none;
+  color: #6a6b6c;
+  padding: 0 15px;
+}
+.container.jumbo {
+  height: 500px;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  position: relative;
+}
+.container.jumbo .row {
+  --bs-gutter-x: 0px;
+  height: 100%;
+}
+.container.jumbo .row .col-12 {
+  height: 100%;
+}
+.container.jumbo .row .col-12 .jumbo-img {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.container.jumbo .row .col-12 .jumbo-img .jumbo-content {
+  height: 100%;
+}
+.container.jumbo .row .col-12 .jumbo-img .jumbo-content .todays-pick {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  border-radius: 10px;
+  transform: translate(-50%, 50%);
+  background-color: white;
+  color: #333338;
+  height: 150px;
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.container.jumbo .row .col-12 .jumbo-img .jumbo-content .todays-pick .pick {
+  width: 130px;
+  height: 30px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #fc7525;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container.jumbo .row .col-12 .jumbo-img .jumbo-content .todays-pick .pick p {
+  margin: 0px;
+  font-size: 13px;
+}
+.container.jumbo .row .col-12 .jumbo-img .jumbo-content .foodie_journal {
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 82%);
+}
+.container.jumbo .row .col-12 .jumbo-img .jumbo-content .foodie_journal .foodie_journal-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.container.jumbo .row .col-12 .jumbo-img .jumbo-content .foodie_journal .foodie_journal-title hr {
+  width: 30%;
+  color: #f0eeeb;
+  height: 2px;
+}
+.container.jumbo .row .col-12 .jumbo-img .jumbo-content .foodie_journal .foodie_journal-title h3 {
+  margin: 30px;
+  font-size: 20px;
+}
+.container.jumbo .row .col-12 .jumbo-img .jumbo-content .foodie_journal .cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.container.jumbo .row .col-12 .jumbo-img .jumbo-content .foodie_journal .cards .card {
+  border: 0px;
+  margin: 0 20px;
+}
+
+.container.text-popular {
+  margin-top: 400px;
+  margin-bottom: 60px;
+}
+.container.text-popular .row .col-12 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.container.text-popular .row .col-12 h4 {
+  color: #333338;
+  margin-bottom: 20px;
+}
+.container.text-popular .row .col-12 p {
+  margin-bottom: 0;
+  color: #6a6b6c;
+}
+.container.popular {
+  padding: 0 10%;
+}
+.container.popular .row .col-6 .card {
+  margin-right: 0;
+  height: 100%;
+}
+.container.popular .row .col-6 .card .card-body {
+  padding: 0 20px;
+}
+.container.popular .row .col-6 .card .card-body h5 {
+  margin-top: 20px;
+}
+.container.popular .row .col-6 .card .card-body p.card-text {
+  color: #333338;
+  margin-bottom: 20px;
+}
+.container.popular .row .col-6 .card .card-body hr {
+  color: #f0eeeb;
+  height: 2px;
+}
+.container.popular .row .col-6 .card .card-body button {
+  background-color: #fc7525;
+  color: white;
+  border: 1px solid transparent;
+}
+.container.popular .row .col-6 .card .card-body button p {
+  font-size: 12px;
+  margin: 6px 10px;
+}
+.container.popular .row .col-6 .collage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.container.popular .row .col-6 .collage .popular-plate {
+  height: 160px;
+  width: 240px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.container.popular .row .col-6 .collage .popular-plate img {
+  height: 160px;
+  width: 240px;
+}
+.container.text-culinary_collection {
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+.container.text-culinary_collection .row .col-12 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.container.text-culinary_collection .row .col-12 h4 {
+  color: #333338;
+  margin-bottom: 20px;
+}
+.container.text-culinary_collection .row .col-12 p {
+  margin-bottom: 0;
+  color: #6a6b6c;
+}
+.container.culinary_collection-cards {
+  padding: 0 10%;
+}
+.container.culinary_collection-cards .row .col-12 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.container.culinary_collection-cards .row .card {
+  height: 150px;
+  width: 240px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container.culinary_collection-cards .row .card img {
+  height: 100px;
+  width: 100px;
+}
+.container.farm {
+  margin-top: 80px;
+  padding: 0 10%;
+}
+.container.farm .row .col-12 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container.farm .row .col-12 .text h4 {
+  color: #333338;
+  margin-bottom: 20px;
+}
+.container.farm .row .col-12 .text p {
+  margin-bottom: 0;
+  color: #6a6b6c;
+}
+.container.farm .row .col-12 button {
+  background-color: #fc7525;
+  color: white;
+  border: 1px solid transparent;
+  height: 40px;
+  margin-right: 15px;
+}
+.container.farm .row .col-12 button p {
+  font-size: 12px;
+  margin: 6px 10px;
+}
+
+.container.table {
+  margin-top: 50px;
+  padding: 0 10%;
+}
+.container.table .row .col-8 .card {
+  background-color: white;
+  border-color: transparent;
+  padding: 0px;
+}
+.container.table .row .col-8 .card .card-body h5 {
+  color: #333338;
+}
+.container.table .row .col-8 .card .card-body small {
+  color: #333338;
+}
+.container.table .row .col-8 .card .card-body hr {
+  height: 2px;
+  color: #f0eeeb;
+}
+.container.table .row .col-8 .card .card-body .card-text {
+  color: #333338;
+  margin-bottom: 20px;
+}
+.container.table .row .col-8 .card .card-body .more {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container.table .row .col-8 .card .card-body .more a {
+  text-decoration: none;
+  color: #333338;
+}
+.container.table .row .col-8 .card .card-body .more button.comments {
+  border: 0px;
+  background-color: white;
+}
+.container.table .row .col-8 .cards {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container.table .row .col-8 .cards .card {
+  margin-top: 25px;
+}
+.container.table .row .col-8 .cards button {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f7f1;
+  border: 1px solid transparent;
+  margin-top: 40px;
+}
+.container.table .row .col-4 .lastest_recpes {
+  position: relative;
+  padding: 0 12px;
+}
+.container.table .row .col-4 .lastest_recpes img {
+  width: 100%;
+  height: 350px;
+}
+.container.table .row .col-4 .lastest_recpes .text-last {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container.table .row .col-4 .lastest_recpes .text-last p {
+  margin-bottom: 0;
+}
+.container.table .row .col-4 .singapore {
+  margin-top: 25px;
+  position: relative;
+}
+.container.table .row .col-4 .singapore img {
+  width: 100%;
+  height: auto;
+}
+.container.table .row .col-4 .singapore button {
+  background-color: #fc7525;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  border: 0px;
+}
+.container.table .row .col-4 .singapore button i {
+  margin-right: 8px;
+}
+.container.table .row .col-4 .singapore span {
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  left: 8px;
+  bottom: 75px;
+  height: 35px;
+  padding-left: 15px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.container.table .row .col-4 hr {
+  color: #6a6b6c;
+  height: 1px;
+  padding: 0px 10px;
+  border: 1px solid #6a6b6c;
+  margin: 40px 10px;
+}
+.container.table .row .col-4 .social {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.container.table .row .col-4 .social .text-social h4 {
+  color: #fc7525;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.container.table .row .col-4 .social .icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.container.table .row .col-4 .social .icon a {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afafaf;
+  background-color: #f6f7f1;
+  border-radius: 5px;
+  margin-right: 13px;
+  text-decoration: none;
+}
+.container.table .row .col-4 .social .icon a i {
+  text-decoration: none;
+  color: #6a6b6c;
+}
+.container.table .row .col-4 .social .btn-group {
+  width: 100%;
+  height: 50px;
+  margin-top: 60px;
+}
+.container.table .row .col-4 .social .btn-group .btn-primary {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f7f1;
+  border-color: #afafaf;
+}
+.container.table .row .col-4 .social .btn-group .active {
+  background-color: white;
+}
+.container.table .row .col-4 .social .popular_recent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.container.table .row .col-4 .social .popular_recent .section {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.container.table .row .col-4 .social .popular_recent .section img {
+  border-radius: 50%;
+  margin-right: 20px;
+  height: 40px;
+  width: 40px;
+}
+.container.table .row .col-4 .social .popular_recent .section .text-section p {
+  margin-bottom: 0px;
+  color: #333338;
+}
+.container.table .row .col-4 .social .popular_recent .section .text-section small {
+  color: #6a6b6c;
+  font-size: 12px;
+}
+.container.table .row .col-4 .social .tweet {
+  width: 100%;
+  margin-top: 60px;
+  background-color: white;
+  padding: 10px;
+}
+.container.table .row .col-4 .social .tweet .tweet-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container.table .row .col-4 .social .tweet .tweet-title .tweet-title_text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.container.table .row .col-4 .social .tweet .tweet-title .tweet-title_text h2 {
+  color: #333338;
+  font-size: 20px;
+  margin-right: 2px;
+}
+.container.table .row .col-4 .social .tweet .tweet-title .tweet-title_text span {
+  color: #afafaf;
+  font-size: 12px;
+  margin-right: 2px;
+}
+.container.table .row .col-4 .social .tweet .tweet-title .tweet-title_text small {
+  color: #3b8ca8;
+  font-size: 12px;
+  margin-right: 2px;
+}
+.container.table .row .col-4 .social .tweet .tweet-title i {
+  color: #6a6b6c;
+  padding: 10px;
+}
+.container.table .row .col-4 .social .tweet .tweet-content .tweet-autore {
+  margin-bottom: 10px;
+}
+.container.table .row .col-4 .social .tweet .tweet-content .tweet-autore .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.container.table .row .col-4 .social .tweet .tweet-content .tweet-autore .logo img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+.container.table .row .col-4 .social .tweet .tweet-content .tweet-autore .logo .name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.container.table .row .col-4 .social .tweet .tweet-content .tweet-autore .logo .twitter-logo {
+  margin-left: 118px;
+}
+.container.table .row .col-4 .social .tweet .tweet-content .tweet-write {
+  padding-left: 40px;
+  margin-bottom: 15px;
+}
+.container.table .row .col-4 .social .tweet .tweet-content .tweet-write small {
+  font-size: 12px;
+  margin-bottom: 25px;
+  color: #333338;
+}
+.container.table .row .col-4 .social .tweet .tweet-content .tweet-write small span {
+  color: #3b8ca8;
+}
+.container.table .row .col-4 .social .tweet .tweet-content .tweet-write img {
+  width: 100%;
+  height: auto;
+}
+.container.table .row .col-4 .social .tweet .tweet-content .like {
+  padding-left: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.container.table .row .col-4 .social .tweet .tweet-content .like .tap {
+  width: 80px;
+  height: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #6a6b6c;
+}
+.container.table .row .col-4 .social .tweet .tweet-content .like span {
+  font-size: 15px;
+}
+
+#root {
+  background-color: #f0eeeb;
+}
+#root header {
+  background-color: white;
+}

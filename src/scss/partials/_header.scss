@@ -1,0 +1,152 @@
+.container{
+  &.social_icons{
+    height: 30px;
+    .row{
+      .col-12{
+        padding: $padding-10-col;
+        height: 30px;
+        @include flex-r-spacebet-c;
+        .advertsite{
+          width: auto;
+          a{
+            text-decoration: none;
+            color: $color-black;
+            span{
+              font-size: $fontsize-10;
+              margin-right: 20px;
+              button{
+                color: white;
+                background-color: $color-orange;
+                border: 0px;
+                border-radius: 5px;
+              }
+            }
+          }
+        }
+        .icons{
+          width: auto;
+          a{
+            i{
+              color: $color-grey-scuro;
+              padding: 0 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.logo{
+    height: 122px;
+    .row{
+      height: 100%;
+      .col-12{
+        @include flex-r-c-c;
+        height: 100%;
+        img{
+          height: 100%;
+        }
+      }
+    }
+  }
+  &.menu-bar{
+    height: 70px;
+    // @include fixed;
+    .row{
+      height: 100%;
+      .col-12{
+        padding: $padding-10-col;
+        height: 100%;
+        @include flex-r-c-c;
+        ul{
+          height: 100%;
+          margin-bottom: 0;
+          @include flex-r-c-c;
+          list-style: none;
+          li{
+            cursor: pointer;
+            text-decoration: none;
+            color: $color-grey-scuro;
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+  }
+  &.jumbo{
+    height: 500px;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    position: relative;
+    .row{
+      --bs-gutter-x: 0px;
+      height: 100%;
+      .col-12{
+        height: 100%;
+        .jumbo-img{
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 100%;
+          .jumbo-content{
+            height: 100%;
+            .todays-pick{
+              position: absolute;
+              top: 12%;
+              left: 50%;
+              border-radius: 10px;
+              transform: translate(-50%, 50%);
+              background-color: $color-white;
+              color: $color-black;
+              height: 150px;
+              width: 600px;
+              @include flex-r-c-c;
+              .pick{
+                width: 130px;
+                height: 30px;
+                border-radius: 5px;
+                @include flex-r-c-c;
+                background-color: $color-orange;
+                color: $color-white;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                p{
+                  margin: 0px;
+                  font-size: 13px;
+                }
+              }
+            }
+            .foodie_journal{
+              background-color: $color-white;
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              transform: translate(-50%, 82%);
+              .foodie_journal-title{
+                @include flex-r-c-c;
+                hr{
+                  width: 30%;
+                  color: $color-lightgrey;
+                  height: 2px;
+                }
+                h3{
+                  margin: 30px;
+                  font-size: 20px;
+                }
+              }
+              .cards{
+                @include flex-r-c-c;
+                .card{
+                  border: 0px;
+                  margin: 0 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

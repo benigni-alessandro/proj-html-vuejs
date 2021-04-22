@@ -1,0 +1,259 @@
+.container{
+  &.table{
+    margin-top: 50px;
+    padding: $padding-10-col;
+    .row{
+      .col-8{
+        .card{
+          background-color: $color-white;
+          border-color: transparent;
+          padding: 0px;
+          .card-body{
+            h5{
+              color: $color-black;
+            }
+            small{
+              color: $color-black;
+            }
+            hr{
+              height: 2px;
+              color: $color-lightgrey;
+            }
+            .card-text{
+              color: $color-black;
+              margin-bottom: 20px;
+            }
+            .more{
+              @include flex-row-spbetw;
+              a{
+                text-decoration: none;
+                color: $color-black;
+              }
+              button.comments{
+                border: 0px;
+                background-color: $color-white;
+              }
+            }
+          }
+        }
+        .cards{
+          margin-top: 30px;
+          @include flex-row-wrap-spbetw ;
+          .card{
+            margin-top: 25px;
+          }
+          button{
+            width: 100%;
+            height: 40px;
+            @include flex-r-c-c;
+            background-color: $color-springwood;
+            border: 1px solid transparent;
+            margin-top: 40px;
+          }
+        }
+      }
+      .col-4{
+        .lastest_recpes{
+          position: relative;
+          padding: 0 12px;
+          img{
+            width: 100%;
+            height: 350px;
+          }
+          .text-last{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            @include flex-col-center-center;
+            p{
+              margin-bottom: 0;
+            }
+          }
+        }
+        .singapore{
+          margin-top: 25px;
+          position: relative;
+          img{
+            width: 100%;
+            height: auto;
+          }
+          button{
+            background-color: $color-orange;
+            color: $color-white;
+            @include flex-r-c-c;
+            width: 100%;
+            height: 40px;
+            border: 0px;
+            i{
+              margin-right: 8px;
+            }
+          }
+          span{
+            color: white;
+            background: rgba(0,0,0,0.7);
+            position: absolute;
+            left: 8px;
+            bottom: 75px;
+            height: 35px;
+            padding-left: 15px;
+            padding-right: 20px;
+            @include flex-r-start-c;
+          }
+        }
+        hr{
+          color: $color-grey-scuro;
+          height: 1px;
+          padding: 0px 10px;
+          border: 1px solid $color-grey-scuro;
+          margin: 40px 10px;
+        }
+        .social{
+          margin-top: 50px;
+          @include flex-col-start-c;
+          .text-social{
+            h4{
+              color: $color-orange;
+              font-size: 18px;
+              margin-bottom: 20px;
+            }
+          }
+          .icon{
+            @include flex-r-c-c;
+            a{
+              height: 35px;
+              width: 35px;
+              @include flex-r-c-c;
+              border: 1px solid $color-grey;
+              background-color: $color-springwood;
+              border-radius: 5px;
+              margin-right: 13px;
+              text-decoration: none;
+              i{
+                text-decoration: none;
+                color: $color-grey-scuro;
+              }
+            }
+          }
+          .btn-group{
+            width: 100%;
+            height: 50px;
+            margin-top: 60px;
+            .btn-primary{
+              color: black;
+              @include flex-r-c-c;
+              background-color: $color-springwood;
+              border-color: $color-grey;
+            }
+            & .active{
+              background-color: $color-white;
+            }
+          }
+          .popular_recent{
+            @include flex-col-start-c;
+            .section{
+              margin-top: 20px;
+              @include flex-r-start-c;
+              img{
+                border-radius: 50%;
+                margin-right: 20px;
+                height: 40px;
+                width: 40px;
+              }
+              .text-section{
+                p{
+                  margin-bottom: 0px;
+                  color: $color-black;
+                }
+                small{
+                  color: $color-grey-scuro;
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+          .tweet{
+            width: 100%;
+            margin-top: 60px;
+            background-color: $color-white;
+            padding: 10px;
+            .tweet-title{
+              @include  flex-row-spbetw;
+              .tweet-title_text{
+                @include flex-r-start-c;
+                h2{
+                  color: $color-black;
+                  font-size: 20px;
+                  margin-right: 2px;
+                }
+                span{
+                  color: $color-grey;
+                  font-size: 12px;
+                  margin-right: 2px;
+                }
+                small{
+                  color: $color-boston_blue;
+                  font-size: 12px;
+                  margin-right: 2px;
+                }
+              }
+              i{
+                color: $color-grey-scuro;
+                padding: 10px;
+              }
+            }
+            .tweet-content{
+              .tweet-autore{
+                margin-bottom: 10px;
+                .logo{
+                  @include flex-r-start-c;
+                  img{
+                    height: 30px;
+                    width: 30px;
+                    margin-right: 10px;
+                  }
+                  .name{
+                    @include flex-col-start;
+                  }
+                  .twitter-logo{
+                    margin-left: 118px;
+                  }
+                }
+              }
+              .tweet-write{
+                padding-left: 40px;
+                margin-bottom: 15px;
+                small{
+                  font-size: 12px;
+                  margin-bottom: 25px;
+                  color: $color-black;
+                  span{
+                    color: $color-boston_blue;
+                  }
+                }
+                img{
+                  width: 100%;
+                  height: auto;
+                }
+              }
+              .like{
+                padding-left: 40px;
+                @include flex-r-spacebet-c;
+                .tap{
+                  width: 80px;
+                  height: 15px;
+                  @include flex-r-spacebet-c;
+                  color: $color-grey-scuro;
+                }
+                span{
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

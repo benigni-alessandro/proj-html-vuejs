@@ -1,0 +1,134 @@
+.container{
+  &.text-popular{
+    margin-top: 400px;
+    margin-bottom: 60px;
+    .row{
+      .col-12{
+        @include flex-col-center-center;
+        margin-bottom: 20px;
+        h4{
+          color: $color-black;
+          margin-bottom: 20px;
+        }
+        p{
+          margin-bottom: 0;
+          color: $color-grey-scuro;
+        }
+      }
+    }
+  }
+  &.popular{
+    padding: $padding-10-col;
+    .row{
+      .col-6{
+        .card{
+          margin-right: 0;
+          height: 100%;
+          .card-body{
+            padding: 0 20px;
+            h5{
+              margin-top: 20px;
+            }
+            p.card-text{
+              color: $color-black;
+              margin-bottom: 20px;
+            }
+            hr{
+              color: $color-lightgrey;
+              height: 2px;
+            }
+            button{
+              background-color: $color-orange;
+              color: $color-white;
+              border: 1px solid transparent;
+              p{
+                font-size: 12px;
+                margin: 6px 10px;
+              }
+            }
+          }
+        }
+        .collage{
+          @include flex-row-wrap;
+          .popular-plate{
+            height: 160px;
+            width: 240px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            img{
+              height: 160px;
+              width: 240px;
+            }
+          }
+        }
+      }
+    }
+  }&.text-culinary_collection{
+    margin-top: 100px;
+    margin-bottom: 60px;
+    .row{
+      .col-12{
+        @include flex-col-center-center;
+        margin-bottom: 20px;
+        h4{
+          color: $color-black;
+          margin-bottom: 20px;
+        }
+        p{
+          margin-bottom: 0;
+          color: $color-grey-scuro;
+        }
+      }
+    }
+  }
+  &.culinary_collection-cards{
+    padding: $padding-10-col;
+    .row{
+      .col-12{
+        @include flex-row-wrap;
+      }
+      .card{
+        height:150px;
+        width: 240px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        @include flex-col-center-center;
+        img{
+          height: 100px;
+          width: 100px;
+        }
+      }
+    }
+  }
+  &.farm{
+    margin-top: 80px;
+    padding: $padding-10-col;
+    .row{
+      .col-12{
+        @include flex-row-spbetw;
+        .text{
+          h4{
+            color: $color-black;
+            margin-bottom: 20px;
+          }
+          p{
+            margin-bottom: 0;
+            color: $color-grey-scuro;
+          }
+        }
+        button{
+          background-color: $color-orange;
+          color: $color-white;
+          border: 1px solid transparent;
+          height: 40px;
+          margin-right: 15px;
+          p{
+            font-size: 12px;
+            margin: 6px 10px;
+          }
+        }
+      }
+    }
+  }
+}
+@import '_table-section.scss';
