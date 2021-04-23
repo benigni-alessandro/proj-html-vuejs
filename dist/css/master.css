@@ -18,6 +18,8 @@
 }
 
 .container.social_icons {
+  max-width: 100%;
+  background-color: white;
   height: 30px;
 }
 .container.social_icons .row .col-12 {
@@ -53,6 +55,8 @@
   padding: 0 10px;
 }
 .container.logo {
+  max-width: 100%;
+  background-color: white;
   height: 122px;
 }
 .container.logo .row {
@@ -71,7 +75,7 @@
 .container.menu-bar {
   position: sticky;
   top: 0;
-  z-index: 10000000000;
+  z-index: 9999;
   height: 70px;
   max-width: 100%;
   background-color: white;

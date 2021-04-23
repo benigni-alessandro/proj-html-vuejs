@@ -1,5 +1,7 @@
 .container{
   &.social_icons{
+    max-width: 100%;
+    background-color: $color-white;
     height: 30px;
     .row{
       .col-12{
@@ -36,6 +38,8 @@
     }
   }
   &.logo{
+    max-width: 100%;
+    background-color: $color-white;
     height: 122px;
     .row{
       height: 100%;
@@ -51,7 +55,7 @@
   &.menu-bar{
     position: sticky;
     top: 0;
-    z-index: 10000000000;
+    z-index:9999;
     height: 70px;
     max-width: 100%;
     background-color: $color-white;
