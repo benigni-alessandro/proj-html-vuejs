@@ -81,7 +81,7 @@
             height: auto;
           }
           button{
-            background-color: $color-orange;
+            background-color: $color-primary;
             color: $color-white;
             @include flex-r-c-c;
             width: 100%;
@@ -115,7 +115,7 @@
           @include flex-col-start-c;
           .text-social{
             h4{
-              color: $color-orange;
+              color: $color-primary;
               font-size: 18px;
               margin-bottom: 20px;
             }

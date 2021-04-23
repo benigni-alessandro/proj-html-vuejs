@@ -28,7 +28,7 @@
               width: 500px;
             }
             button{
-              background-color: $color-orange;
+              background-color: $color-primary;
               color: $color-white;
               border: 1px solid transparent;
               height: 40px;
@@ -105,7 +105,7 @@
           width: calc(100% / 4);
           border-right: 1px dashed $color-grey;
           h3{
-            color:$color-orange;
+            color:$color-primary;
             font-size: 16px;
             margin-bottom: 25px;
             padding-left: 20px;
@@ -145,7 +145,7 @@
           h3{
             font-size: 16px;
             margin-bottom: 25px;
-            color: $color-orange;
+            color: $color-primary;
           }
           img{
             height: 50px;
