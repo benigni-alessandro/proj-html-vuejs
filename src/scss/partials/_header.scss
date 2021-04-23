@@ -75,6 +75,19 @@
             text-decoration: none;
             color: $color-black;
             padding: 0 35px;
+            position: relative;
+            &:hover{
+              color: $color-primary;
+            }
+            &:hover:after{
+              content: "";
+              color: $color-primary;
+              border-bottom: solid 3px $color-primary;
+              width: 50%;
+              position: absolute;
+              left: 26%;
+              top: 32px;
+            }
           }
         }
       }
@@ -109,6 +122,9 @@
               height: 150px;
               width: 600px;
               @include flex-r-c-c;
+              h1{
+                text-align: center;
+              }
               .pick{
                 width: 130px;
                 height: 30px;
@@ -149,6 +165,12 @@
                 .card{
                   border: 0px;
                   margin: 0 20px;
+                  h5{
+                    text-align: center;
+                  }
+                  p{
+                    text-align: center;
+                  }
                 }
               }
             }
