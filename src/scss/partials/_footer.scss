@@ -61,17 +61,110 @@
     }
   }
   &.utilities{
+    height: auto;
+    background-color: $color-white;
+    padding-top: 50px;
+    padding-bottom: 50px;
     max-width: 100%;
     .row{
+      height: 100%;
       .col-12{
+        height: 100%;
+        @include flex-r-c-start;
         padding: $padding-10-col;
         .logo-social{
+          height: 230px;
+          width: calc(100% / 4);
+          border-right: 1px dashed $color-grey;
           img{
-
+            height: 80px;
+            margin-bottom: 30px;
           }
           .socials{
-            
+            color: $color-grey;
+            a{
+              color: $color-grey;
+              margin-right: 10px;
+            }
           }
+        }
+        .footer_menu{
+          height: 220px;
+          width: calc(100% / 4);
+          border-right: 1px dashed $color-grey;
+          padding-left: 30px;
+          ul{
+            list-style: none;
+            li{
+              margin-bottom: 20px;
+            }
+          }
+        }
+        .contact{
+          height: 220px;
+          width: calc(100% / 4);
+          border-right: 1px dashed $color-grey;
+          h3{
+            color:$color-orange;
+            font-size: 16px;
+            margin-bottom: 25px;
+            padding-left: 20px;
+          }
+          .posizione{
+            color: $color-grey;
+            @include flex-row-spbetw;
+            padding-left: 20px;
+            padding-right: 80px;
+            margin-bottom: 10px;
+            span{
+              padding-left: 10px;
+            }
+          }
+          .email{
+            color: $color-grey;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            span{
+              padding-left: 30px;
+            }
+          }
+          .numero{
+            color: $color-grey;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            span{
+              padding-left: 30px;
+            }
+          }
+        }
+        .getapp{
+          height: 220px;
+          width: calc(100% / 4);
+          border-right: 1px dashed $color-grey;
+          padding-left: 20px;
+          h3{
+            font-size: 16px;
+            margin-bottom: 25px;
+            color: $color-orange;
+          }
+          img{
+            height: 50px;
+            width: auto;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+  &.copyrights{
+    height: 70px;
+    .row{
+      height: 100%;
+      .col-12{
+        height: 100%;
+        @include flex-r-c-c;
+        small{
+          color: $color-grey;
         }
       }
     }

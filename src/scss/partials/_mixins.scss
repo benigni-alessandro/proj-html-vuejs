@@ -21,6 +21,13 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@mixin flex-r-c-start{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
 @mixin flex-r-start-c{
   display: flex;
   flex-direction: row;

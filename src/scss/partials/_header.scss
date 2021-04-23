@@ -49,8 +49,12 @@
     }
   }
   &.menu-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10000000000;
     height: 70px;
-    // @include fixed;
+    max-width: 100%;
+    background-color: $color-white;
     .row{
       height: 100%;
       .col-12{
@@ -65,15 +69,15 @@
           li{
             cursor: pointer;
             text-decoration: none;
-            color: $color-grey-scuro;
-            padding: 0 15px;
+            color: $color-black;
+            padding: 0 35px;
           }
         }
       }
     }
   }
   &.jumbo{
-    height: 500px;
+    height: auto;
     padding: 0;
     margin: 0;
     max-width: 100%;
@@ -87,9 +91,9 @@
           background-position: center center;
           background-repeat: no-repeat;
           background-size: cover;
-          height: 100%;
+          height: 500px;
           .jumbo-content{
-            height: 100%;
+            height: 500px;
             .todays-pick{
               position: absolute;
               top: 12%;
