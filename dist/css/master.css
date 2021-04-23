@@ -17,6 +17,10 @@
   box-shadow: 0px 0px 0px 0px;
 }
 
+.align-center {
+  text-align: center;
+}
+
 .container.social_icons {
   max-width: 100%;
   background-color: white;

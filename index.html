@@ -71,7 +71,7 @@
                         <img :src="elemento.immagine" class="card-img-top" alt="...">
                           <div class="card-body">
                             <h5 class="card-title">{{elemento.titolo}}</h5>
-                            <p class="card-text">By admin |</p>
+                            <p class="card-text">By admin | {{data()}}</p>
                           </div>
                       </div>
                     </div>
@@ -215,40 +215,11 @@
                   </div>
               </div>
               <div class="cards">
-                <div class="card" style="width: 20rem;">
-                  <img src="./images/fi-roundup-600x395.jpg" class="card-img-top" alt="...">
+                <div v-for="(tableimage, i) in tableimages" class="card" style="width: 20rem;">
+                  <img :src="tableimage.immagine" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-                </div>
-                <div class="card" style="width: 20rem;">
-                  <img src="./images/fi-korean-food-600x395.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-                </div>
-                <div class="card" style="width: 20rem;">
-                  <img src="./images/fi-toasts-600x395.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-                </div>
-                <div class="card" style="width: 20rem;">
-                  <img src="./images/fi-street-food-600x395.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-                </div>
-                <div class="card" style="width: 20rem;">
-                  <img src="./images/fi-organic-breakfast-600x395.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-                </div>
-                <div class="card" style="width: 20rem;">
-                  <img src="./images/fi-water-side-rest-600x395.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text align-center">{{tableimage.titolo}}</p>
+                    <small class="align-center">data</small>
                   </div>
                 </div>
                 <button type="button" name="button">LOAD MORE POSTS</button>
