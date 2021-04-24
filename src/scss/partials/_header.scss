@@ -76,10 +76,22 @@
             color: $color-black;
             padding: 0 35px;
             position: relative;
-            &:hover{
+            &.active{
+              color: $color-primary;
+              &:after{
+                content: "";
+                color: $color-primary;
+                border-bottom: solid 3px $color-primary;
+                width: 50%;
+                position: absolute;
+                left: 26%;
+                top: 32px;
+              }
+            }
+            &.menu:hover{
               color: $color-primary;
             }
-            &:hover:after{
+            &.menu:hover:after{
               content: "";
               color: $color-primary;
               border-bottom: solid 3px $color-primary;
@@ -87,6 +99,9 @@
               position: absolute;
               left: 26%;
               top: 32px;
+            }
+            &.cerca{
+              color: $color-primary;
             }
           }
         }
@@ -121,7 +136,7 @@
               color: $color-black;
               height: 150px;
               width: 600px;
-              @include flex-r-c-c;
+              @include flex-col-center-center;
               h1{
                 text-align: center;
               }
@@ -165,12 +180,6 @@
                 .card{
                   border: 0px;
                   margin: 0 20px;
-                  h5{
-                    text-align: center;
-                  }
-                  p{
-                    text-align: center;
-                  }
                 }
               }
             }

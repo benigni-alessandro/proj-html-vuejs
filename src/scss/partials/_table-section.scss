@@ -10,9 +10,6 @@
           border-color: transparent;
           padding: 0px;
           .card-body{
-            h5{
-              color: $color-black;
-            }
             small{
               color: $color-black;
             }
@@ -21,14 +18,12 @@
               color: $color-lightgrey;
             }
             .card-text{
-              color: $color-black;
               margin-bottom: 20px;
             }
             .more{
               @include flex-row-spbetw;
               a{
                 text-decoration: none;
-                color: $color-black;
               }
               button.comments{
                 border: 0px;
@@ -42,6 +37,10 @@
           @include flex-row-wrap-spbetw ;
           .card{
             margin-top: 25px;
+            .card-text{
+              font-size: 22px;
+              font-weight: bold;
+            }
           }
           button{
             width: 100%;
@@ -165,7 +164,6 @@
               .text-section{
                 p{
                   margin-bottom: 0px;
-                  color: $color-black;
                 }
                 small{
                   color: $color-grey-scuro;

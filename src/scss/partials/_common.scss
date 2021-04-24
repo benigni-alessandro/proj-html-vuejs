@@ -19,3 +19,72 @@
 .align-center{
   text-align: center;
 }
+.date{
+  margin-bottom: 0;
+  color: $color-grey-scuro;
+  font-size: 15px;
+}
+img.card-img-top{
+  position: relative;
+}
+.pointer{
+  cursor: pointer;
+}
+.hover_primary{
+  &:hover{
+    color: $color-primary;
+  }
+}
+
+.card{
+  .img-card{
+    position: relative;
+    &:hover .card_hover{
+      visibility: visible;
+      background-color: $color-background;
+      i{
+        color: $color-background;
+        background-color: $color-white;
+      }
+      h5{
+        color: $color-white;
+      }
+    }
+    .card_hover{
+      @include flex-col-center-center;
+      position: absolute;
+      visibility: hidden;
+      transition: background-color 2.5s ease;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      padding: 0 15px;
+      i{
+        color: transparent;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: transparent;
+        transition: color 2.8s ease;
+        transition: background-color 2.8s ease;
+
+      }
+      h5{
+        padding-top: 10px;
+        color: transparent;
+        margin-bottom: 0px;
+        font-size: 17px;
+        transition: color 2.8s ease;
+
+      }
+    }
+  }
+  .card-body{
+    .card-title{
+      &:hover{
+        color: $color-primary;
+      }
+    }    
+  }
+}

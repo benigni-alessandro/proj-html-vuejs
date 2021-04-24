@@ -21,6 +21,72 @@
   text-align: center;
 }
 
+.date {
+  margin-bottom: 0;
+  color: #6a6b6c;
+  font-size: 15px;
+}
+
+img.card-img-top {
+  position: relative;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.hover_primary:hover {
+  color: #20ad96;
+}
+
+.card .img-card {
+  position: relative;
+}
+.card .img-card:hover .card_hover {
+  visibility: visible;
+  background-color: rgba(26, 188, 156, 0.9);
+}
+.card .img-card:hover .card_hover i {
+  color: rgba(26, 188, 156, 0.9);
+  background-color: white;
+}
+.card .img-card:hover .card_hover h5 {
+  color: white;
+}
+.card .img-card .card_hover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  visibility: hidden;
+  transition: background-color 2.5s ease;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  padding: 0 15px;
+}
+.card .img-card .card_hover i {
+  color: transparent;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: color 2.8s ease;
+  transition: background-color 2.8s ease;
+}
+.card .img-card .card_hover h5 {
+  padding-top: 10px;
+  color: transparent;
+  margin-bottom: 0px;
+  font-size: 17px;
+  transition: color 2.8s ease;
+}
+.card .card-body .card-title:hover {
+  color: #20ad96;
+}
+
 .container.social_icons {
   max-width: 100%;
   background-color: white;
@@ -111,10 +177,10 @@
   padding: 0 35px;
   position: relative;
 }
-.container.menu-bar .row .col-12 ul li:hover {
+.container.menu-bar .row .col-12 ul li.active {
   color: #20ad96;
 }
-.container.menu-bar .row .col-12 ul li:hover:after {
+.container.menu-bar .row .col-12 ul li.active:after {
   content: "";
   color: #20ad96;
   border-bottom: solid 3px #20ad96;
@@ -122,6 +188,21 @@
   position: absolute;
   left: 26%;
   top: 32px;
+}
+.container.menu-bar .row .col-12 ul li.menu:hover {
+  color: #20ad96;
+}
+.container.menu-bar .row .col-12 ul li.menu:hover:after {
+  content: "";
+  color: #20ad96;
+  border-bottom: solid 3px #20ad96;
+  width: 50%;
+  position: absolute;
+  left: 26%;
+  top: 32px;
+}
+.container.menu-bar .row .col-12 ul li.cerca {
+  color: #20ad96;
 }
 .container.jumbo {
   height: auto;
@@ -157,7 +238,7 @@
   height: 150px;
   width: 600px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -214,12 +295,6 @@
 .container.jumbo .row .col-12 .jumbo-img .jumbo-content .foodie_journal .cards .card {
   border: 0px;
   margin: 0 20px;
-}
-.container.jumbo .row .col-12 .jumbo-img .jumbo-content .foodie_journal .cards .card h5 {
-  text-align: center;
-}
-.container.jumbo .row .col-12 .jumbo-img .jumbo-content .foodie_journal .cards .card p {
-  text-align: center;
 }
 
 .container.text-popular {
@@ -378,9 +453,6 @@
   border-color: transparent;
   padding: 0px;
 }
-.container.table .row .col-8 .card .card-body h5 {
-  color: #333338;
-}
 .container.table .row .col-8 .card .card-body small {
   color: #333338;
 }
@@ -389,7 +461,6 @@
   color: #f0eeeb;
 }
 .container.table .row .col-8 .card .card-body .card-text {
-  color: #333338;
   margin-bottom: 20px;
 }
 .container.table .row .col-8 .card .card-body .more {
@@ -399,7 +470,6 @@
 }
 .container.table .row .col-8 .card .card-body .more a {
   text-decoration: none;
-  color: #333338;
 }
 .container.table .row .col-8 .card .card-body .more button.comments {
   border: 0px;
@@ -414,6 +484,10 @@
 }
 .container.table .row .col-8 .cards .card {
   margin-top: 25px;
+}
+.container.table .row .col-8 .cards .card .card-text {
+  font-size: 22px;
+  font-weight: bold;
 }
 .container.table .row .col-8 .cards button {
   width: 100%;
@@ -564,7 +638,6 @@
 }
 .container.table .row .col-4 .social .popular_recent .section .text-section p {
   margin-bottom: 0px;
-  color: #333338;
 }
 .container.table .row .col-4 .social .popular_recent .section .text-section small {
   color: #6a6b6c;

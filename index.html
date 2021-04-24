@@ -29,7 +29,7 @@
         <div class="container logo">
           <div class="row">
             <div class="col-12">
-              <img src="./images/avada-food-logo-2x.png" alt="">
+              <img class="pointer"src="./images/avada-food-logo-2x.png" alt="">
             </div>
           </div>
         </div>
@@ -37,13 +37,13 @@
           <div class="row">
             <div class="col-12">
               <ul>
-                <li><a href="#"></a>Home</li>
-                <li><a href="#"></a>Recipes</li>
-                <li><a href="#"></a>Places</li>
-                <li><a href="#"></a>Blog</li>
-                <li><a href="#"></a>About</li>
-                <li><a href="#"></a>Contact</li>
-                <li><a href="#"></a><i class="fas fa-search"></i></li>
+                <li class="active"><a href="#"></a>Home</li>
+                <li class="menu"><a href="#"></a>Recipes</li>
+                <li class="menu"><a href="#"></a>Places</li>
+                <li class="menu"><a href="#"></a>Blog</li>
+                <li class="menu"><a href="#"></a>About</li>
+                <li class="menu"><a href="#"></a>Contact</li>
+                <li class="cerca"><a href="#"></a><i class="fas fa-search"></i></li>
               </ul>
             </div>
           </div>
@@ -55,7 +55,7 @@
                 <div class="jumbo-content">
                   <div class="todays-pick">
                     <h1>{{journal[0].titolo}}</h1>
-                    <p class="data"></p>
+                    <p class="date">{{data()}}</p>
                     <div class="pick">
                       <p>TODAY'S PICK</p>
                     </div>
@@ -68,11 +68,17 @@
                     </div>
                     <div class="cards">
                       <div  v-for="(elemento, i) in journal" class="card" style="width: 18rem;">
-                        <img :src="elemento.immagine" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">{{elemento.titolo}}</h5>
-                            <p class="card-text">By admin | {{data()}}</p>
+                        <div class="img-card pointer">
+                          <img :src="elemento.immagine" class="card-img-top" alt="...">
+                          <div class="card_hover">
+                            <i class="fas fa-link pointer"></i>
+                            <h5 class="card-title align-center pointer">{{elemento.titolo}}</h5>
                           </div>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title align-center pointer">{{elemento.titolo}}</h5>
+                          <p class="card-text date align-center">By admin | {{data()}}</p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -96,14 +102,20 @@
           <div class="row">
             <div class="col-6">
               <div class="card">
-                <img src="./images/Yogurt-Nan-600x395.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Lunch Favourite with Salad, Naan and Beans</h5>
-                    <small>Burkey, Featured, Healthy, Lastest Recipes, Staff Picks</small>
-                    <hr>
-                    <p class="card-text">Suspendisse at semper odio. Nam fringilla scelerisque tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec tincidunt posuere ornare. Phasellus placerat odio non feugiat sollicitudin. Integer vitae elementum ex. Sed porttitor, diam eget convallis volutpat, arcu tellus facilisis nulla, id dignissim orci leo id </p>
-                    <button type="button" name="button"><p>LEARN MORE</p></button>
+                <div class="img-card pointer">
+                  <img src="./images/Yogurt-Nan-600x395.jpg" class="card-img-top" alt="...">
+                  <div class="card_hover">
+                    <i class="fas fa-link pointer"></i>
+                    <h5 class="card-title align-center pointer">Lunch Favourite with Salad, Naan and Beans</h5>
                   </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title pointer">Lunch Favourite with Salad, Naan and Beans</h5>
+                  <small>Burkey, Featured, Healthy, Lastest Recipes, Staff Picks</small>
+                  <hr>
+                  <p class="card-text">Suspendisse at semper odio. Nam fringilla scelerisque tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec tincidunt posuere ornare. Phasellus placerat odio non feugiat sollicitudin. Integer vitae elementum ex. Sed porttitor, diam eget convallis volutpat, arcu tellus facilisis nulla, id dignissim orci leo id </p>
+                  <button type="button" name="button"><p>LEARN MORE</p></button>
+                </div>
               </div>
              </div>
             <div class="col-6">
@@ -149,35 +161,35 @@
           <div class="row">
             <div class="col-12">
               <div class="card">
-                <img src="./images/drinks-recipes.png" alt="">
+                <img class="pointer" src="./images/drinks-recipes.png" alt="">
                 <button type="button" name="button">DRINKS</button>
               </div>
               <div class="card">
-                <img src="./images/soups-recipes.png" alt="">
+                <img class="pointer" src="./images/soups-recipes.png" alt="">
                 <button type="button" name="button">SOUPS</button>
               </div>
               <div class="card">
-                <img src="./images/baking-recipes.png" alt="">
+                <img class="pointer" src="./images/baking-recipes.png" alt="">
                 <button type="button" name="button">BAKERY</button>
               </div>
               <div class="card">
-                <img src="./images/dinner-recipes.png" alt="">
+                <img class="pointer" src="./images/dinner-recipes.png" alt="">
                 <button type="button" name="button">DINNER</button>
               </div>
               <div class="card">
-                <img src="./images/healthy-recipes.png" alt="">
+                <img class="pointer" src="./images/healthy-recipes.png" alt="">
                 <button type="button" name="button">HEALTY</button>
               </div>
               <div class="card">
-                <img src="./images/staff-picks.png" alt="">
+                <img class="pointer" src="./images/staff-picks.png" alt="">
                 <button type="button" name="button">STAFF PICKS</button>
               </div>
               <div class="card">
-                <img src="./images/premium-recipes.png" alt="">
+                <img class="pointer" src="./images/premium-recipes.png" alt="">
                 <button type="button" name="button">APPETISERS</button>
               </div>
               <div class="card">
-                <img src="./images/quick-easy-recipes.png" alt="">
+                <img class="pointer" src="./images/quick-easy-recipes.png" alt="">
                 <button type="button" name="button">QUIK & EASY</button>
               </div>
             </div>
@@ -199,27 +211,39 @@
           <div class="row">
             <div class="col-8">
               <div class="card">
-                <img src="./images/single-post-img3-600x395.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Food Corner: Top Japanese Restaurants for Sushi</h5>
-                    <small>data</small>
-                    <hr>
-                    <p class="card-text">Suspendisse at semper odio. Nam fringilla scelerisque tincidunt. Orci varius natoque
-                      penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec tincidunt posuere ornare.
-                      Phasellus placerat odio non feugiat sollicitudin. Integer vitae elementum ex.
-                    </p>
-                    <div class="more">
-                      <a href="#">Read more ></a>
-                      <button type="button" class="comments" name="button"><i class="far fa-comments"></i><span>0</span></button>
-                    </div>
+                <div class="img-card pointer">
+                    <img src="./images/single-post-img3-600x395.jpg" class="card-img-top" alt="...">
+                  <div class="card_hover">
+                    <i class="fas fa-link pointer"></i>
+                    <h5 class="card-title align-center pointer">Food Corner: Top Japanese Restaurants for Sushi</h5>
                   </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title pointer hover_primary">Food Corner: Top Japanese Restaurants for Sushi</h5>
+                  <small class="date">{{data()}}</small>
+                  <hr>
+                  <p class="card-text">Suspendisse at semper odio. Nam fringilla scelerisque tincidunt. Orci varius natoque
+                    penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec tincidunt posuere ornare.
+                    Phasellus placerat odio non feugiat sollicitudin. Integer vitae elementum ex.
+                  </p>
+                  <div class="more">
+                    <a class="hover_primary pointer">Read more ></a>
+                    <button type="button" class="comments hover_primary pointer" name="button"><i class="far fa-comments"></i><span>0</span></button>
+                  </div>
+                </div>
               </div>
               <div class="cards">
                 <div v-for="(tableimage, i) in tableimages" class="card" style="width: 20rem;">
-                  <img :src="tableimage.immagine" class="card-img-top" alt="...">
+                  <div class="img-card pointer">
+                    <img :src="tableimage.immagine" class="card-img-top" alt="...">
+                    <div class="card_hover">
+                      <i class="fas fa-link pointer"></i>
+                      <h5 class="card-title align-center pointer">{{tableimage.titolo}}</h5>
+                    </div>
+                  </div>
                   <div class="card-body">
-                    <p class="card-text align-center">{{tableimage.titolo}}</p>
-                    <small class="align-center">data</small>
+                    <p class="hover_primary card-text align-center pointer">{{tableimage.titolo}}</p>
+                    <p class="align-center date">By Admin | {{data()}}</p>
                   </div>
                 </div>
                 <button type="button" name="button">LOAD MORE POSTS</button>
@@ -263,22 +287,22 @@
                   <div class="section">
                     <img src="./images/single-post-img3-66x66.jpg" alt="">
                     <div class="text-section">
-                      <p>Food Corner: Top Japanese Restaurants for Sushi</p>
-                      <small>March 25th, 2019</small>
+                      <p class="pointer hover_primary">Food Corner: Top Japanese Restaurants for Sushi</p>
+                      <small>{{data()}}</small>
                     </div>
                   </div>
                   <div class="section">
                     <img src="./images/singapore-featured-image-66x66.jpg" alt="">
                     <div class="text-section">
-                      <p>City Guide: Singapore</p>
-                      <small>February 27th, 2019</small>
+                      <p class="pointer hover_primary">City Guide: Singapore</p>
+                      <small>{{data()}}</small>
                     </div>
                   </div>
                   <div class="section">
                     <img src="./images/slide1-bg-66x66.jpg" alt="">
                     <div class="text-section">
-                      <p>6 Nutritional Tips to Help Burn Body Fat</p>
-                      <small>February 28th, 2019</small>
+                      <p class="pointer hover_primary">6 Nutritional Tips to Help Burn Body Fat</p>
+                      <small>{{data()}}</small>
                     </div>
                   </div>
                 </div>
@@ -358,7 +382,7 @@
           <div class="row">
             <div class="col-12">
               <div class="logo-social">
-                <img src="./images/avada-food-logo-mob-2x-200x87.png" alt="">
+                <img class="pointer" src="./images/avada-food-logo-mob-2x-200x87.png" alt="">
                 <div class="socials">
                   <a href="#"><i class="fab fa-facebook-f"></i></a>
                   <a href="#"><i class="fab fa-instagram"></i></a>
@@ -368,11 +392,11 @@
               </div>
               <div class="footer_menu">
                 <ul>
-                  <li>Recipes</li>
-                  <li>Places</li>
-                  <li>Blog</li>
-                  <li>About</li>
-                  <li>Contact</li>
+                  <li class="pointer hover_primary">Recipes</li>
+                  <li class="pointer hover_primary">Places</li>
+                  <li class="pointer hover_primary">Blog</li>
+                  <li class="pointer hover_primary">About</li>
+                  <li class="pointer hover_primary">Contact</li>
                 </ul>
               </div>
               <div class="contact">
@@ -383,17 +407,17 @@
                 </div>
                 <div class="numero">
                   <i class="fas fa-phone"></i>
-                  <span>+ 0100-505-0000</span>
+                  <span class="pointer hover_primary">+ 0100-505-0000</span>
                 </div>
                 <div class="email">
                   <i class="fas fa-envelope"></i>
-                  <span>info@your-domain.com</span>
+                  <span class="pointer hover_primary">info@your-domain.com</span>
                 </div>
               </div>
               <div class="getapp">
                 <h3>GET OUR APP!</h3>
-                <img src="./images/download-android-200x66.png" alt="">
-                <img src="./images/download-app-store-200x66.png" alt="">
+                <img class="pointer" src="./images/download-android-200x66.png" alt="">
+                <img class="pointer" src="./images/download-app-store-200x66.png" alt="">
               </div>
             </div>
           </div>
