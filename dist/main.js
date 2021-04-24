@@ -46,13 +46,25 @@ var app = new Vue({
   methods:{
     data: function () {
       let data = new Date();
-      console.log(data);
-      let gg = data.getDate() + "/";
-      let mm = data.getMonth() + 1 + "/";
+      let gg = data.getDate();
+      let mm = data.getMonth();
       let aaaa = data.getFullYear();
       let ora = data.getHours();
       let minuti = data.getMinutes();
-      let newd = `${gg}${mm}${aaaa} ${ora}:${minuti}`;
+        if(mm == 0) mm = "Gennaio";
+        if(mm == 1) mm = "Febbraio";
+        if(mm == 2) mm = "Marzo";
+        if(mm == 3) mm = "Aprile";
+        if(mm == 4) mm = "Maggio";
+        if(mm == 5) mm = "Giugno";
+        if(mm == 6) mm = "Luglio";
+        if(mm == 7) mm = "Agosto";
+        if(mm == 8) mm = "Settembre";
+        if(mm == 9) mm = "Ottobre";
+        if(mm == 10) mm = "Novembre";
+        if(mm == 11) mm = "Dicembre";
+        console.log(mm);
+        let newd = `${gg} ${mm} ${aaaa}`;
       return newd;
     },
   }
