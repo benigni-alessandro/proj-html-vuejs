@@ -60,7 +60,7 @@ img.card-img-top {
   justify-content: center;
   position: absolute;
   visibility: hidden;
-  transition: background-color 2.5s ease;
+  transition: background-color 2s ease;
   top: 0;
   right: 0;
   width: 100%;
@@ -73,15 +73,15 @@ img.card-img-top {
   padding: 10px;
   border-radius: 50%;
   background-color: transparent;
-  transition: color 2.8s ease;
-  transition: background-color 2.8s ease;
+  transition: color 2.2s ease;
+  transition: background-color 2.2s ease;
 }
 .card .img-card .card_hover h5 {
   padding-top: 10px;
   color: transparent;
   margin-bottom: 0px;
   font-size: 17px;
-  transition: color 2.8s ease;
+  transition: color 2.2s ease;
 }
 .card .card-body .card-title:hover {
   color: #20ad96;
@@ -922,6 +922,7 @@ img.card-img-top {
   height: 100%;
 }
 .container.copyrights .row .col-12 {
+  position: relative;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -930,4 +931,12 @@ img.card-img-top {
 }
 .container.copyrights .row .col-12 small {
   color: #afafaf;
+}
+.container.copyrights .row .col-12 .fas.fa-chevron-up {
+  position: absolute;
+  left: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+  background-color: #333338;
 }

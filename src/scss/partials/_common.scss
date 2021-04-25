@@ -54,7 +54,7 @@ img.card-img-top{
       @include flex-col-center-center;
       position: absolute;
       visibility: hidden;
-      transition: background-color 2.5s ease;
+      transition: background-color 2.0s ease;
       top: 0;
       right: 0;
       width: 100%;
@@ -66,8 +66,8 @@ img.card-img-top{
         padding: 10px;
         border-radius: 50%;
         background-color: transparent;
-        transition: color 2.8s ease;
-        transition: background-color 2.8s ease;
+        transition: color 2.2s ease;
+        transition: background-color 2.2s ease;
 
       }
       h5{
@@ -75,7 +75,7 @@ img.card-img-top{
         color: transparent;
         margin-bottom: 0px;
         font-size: 17px;
-        transition: color 2.8s ease;
+        transition: color 2.2s ease;
 
       }
     }
@@ -85,6 +85,6 @@ img.card-img-top{
       &:hover{
         color: $color-primary;
       }
-    }    
+    }
   }
 }

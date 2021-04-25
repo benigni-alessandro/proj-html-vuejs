@@ -161,10 +161,19 @@
     .row{
       height: 100%;
       .col-12{
+        position: relative;
         height: 100%;
         @include flex-r-c-c;
         small{
           color: $color-grey;
+        }
+        .fas.fa-chevron-up{
+          position: absolute;
+          left: 20px;
+          padding: 10px;
+          border-radius: 50%;
+          color: $color-white;
+          background-color: $color-black;
         }
       }
     }

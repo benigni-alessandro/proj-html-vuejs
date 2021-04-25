@@ -67,5 +67,9 @@ var app = new Vue({
         let newd = `${gg} ${mm} ${aaaa}`;
       return newd;
     },
+    torna_su: function () {
+      console.log(window);
+      window.document.scrollingElement.scrollTop = 0;
+    }
   }
 });
