@@ -104,7 +104,7 @@
             </div>
           </div>
         </div>
-        <!-- EN HEADER -->
+        <!-- ENd HEADER -->
       <main>
         <div class="container text-popular">
           <div class="row">
@@ -281,10 +281,23 @@
                 <span>City Guide: Singapore</span>
               </div>
               <hr>
-              <div class="input-group flex-nowrap">
-                <span class="input-group-text" id="addon-wrapping"><i class="fas fa-search"></i></span>
-                <input type="text" class="form-control" placeholder="Search..." aria-label="Username" aria-describedby="addon-wrapping">
+
+              <div class="cerca" @mouseleave="desappear_search">
+                <div class="input-group flex-nowrap">
+                  <span class="input-group-text" id="addon-wrapping"><i class="fas fa-search"></i></span>
+                  <input type="text" v-model="searchtext" class="form-control" placeholder="Search..." aria-label="Username" aria-describedby="addon-wrapping">
+                </div>
+                <div v-if="searchtext" class="buscados">
+                  <div v-for="cercato in filtered" class="sezione_ricerca">
+                    <img :src="cercato.immagine" alt="">
+                    <div class="text-section">
+                      <p class="pointer hover_primary">{{cercato.titolo}}</p>
+                      <small>{{data()}}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
+
               <div class="social">
                 <div class="text-social">
                     <h4>Follow Us</h4>
@@ -296,29 +309,28 @@
                   <a class="pointer"><i class="fab fa-youtube"></i></a>
                   <a class="pointer"><i class="fab fa-pinterest-p"></i></a>
                 </div>
+
+
+                <!-- POPULAR O RECENT -->
+
                 <div class="btn-group">
-                  <a  class="btn btn-primary active" aria-current="page">Popular</a>
-                  <a  class="btn btn-primary">Recent</a>
+                  <a  class="btn btn-primary" @click="button_active1" :class="{ active: isActive}" aria-current="page">Popular</a>
+                  <a  class="btn btn-primary" @click="button_active2" :class="{ active: isActive2}">Recent</a>
                 </div>
-                <div class="popular_recent">
-                  <div class="section">
-                    <img src="./images/single-post-img3-66x66.jpg" alt="">
+                <div v-if="isActive" class="popular">
+                  <div v-for="popolare in popular" class="section">
+                    <img :src="popolare.immagine" alt="">
                     <div class="text-section">
-                      <p class="pointer hover_primary">Food Corner: Top Japanese Restaurants for Sushi</p>
+                      <p class="pointer hover_primary">{{popolare.titolo}}</p>
                       <small>{{data()}}</small>
                     </div>
                   </div>
-                  <div class="section">
-                    <img src="./images/singapore-featured-image-66x66.jpg" alt="">
+                </div>
+                <div v-if="isActive2" class="recent">
+                  <div v-for="recenti in recent" class="section">
+                    <img :src="recenti.immagine" alt="">
                     <div class="text-section">
-                      <p class="pointer hover_primary">City Guide: Singapore</p>
-                      <small>{{data()}}</small>
-                    </div>
-                  </div>
-                  <div class="section">
-                    <img src="./images/slide1-bg-66x66.jpg" alt="">
-                    <div class="text-section">
-                      <p class="pointer hover_primary">6 Nutritional Tips to Help Burn Body Fat</p>
+                      <p class="pointer hover_primary">{{recenti.titolo}}</p>
                       <small>{{data()}}</small>
                     </div>
                   </div>

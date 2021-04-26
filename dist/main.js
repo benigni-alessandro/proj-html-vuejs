@@ -42,10 +42,41 @@ var app = new Vue({
         immagine: './images/fi-water-side-rest-600x395.jpg'
       }
     ],
+    popular: [
+      {
+        titolo: 'Food Corner: Top Japanese Restaurants for Sushi',
+        immagine: './images/single-post-img3-66x66.jpg'
+      },
+      {
+        titolo: 'City Guide: Singapore',
+        immagine: './images/singapore-featured-image-66x66.jpg'
+      },
+      {
+        titolo: '6 Nutritional Tips to Help Burn Body Fat',
+        immagine: './images/slide1-bg-66x66.jpg'
+      }
+    ],
+    recent: [
+      {
+        titolo: '6 Nutritional Tips to Help Burn Body Fat',
+        immagine: './images/slide1-bg-66x66.jpg'
+
+      },
+      {
+        titolo: 'City Guide: Singapore',
+        immagine: './images/singapore-featured-image-66x66.jpg'
+      },
+      {
+        titolo: 'Food Corner: Top Japanese Restaurants for Sushi',
+        immagine: './images/single-post-img3-66x66.jpg'
+      }
+    ],
     searched: [],
     searchtext: '',
     isBlock: false,
     isNone: true,
+    isActive: true,
+    isActive2: false,
   },
   mounted(){
       this.searched = [...this.tableimages, ...this.journal];
@@ -92,6 +123,14 @@ var app = new Vue({
       this.isBlock= false;
       this.isNone= true;
       this.searchtext = '';
+    },
+    button_active2: function () {
+      this.isActive2= true;
+      this.isActive = false;
+    },
+    button_active1: function () {
+      this.isActive2= false;
+      this.isActive = true;
     }
 
   }

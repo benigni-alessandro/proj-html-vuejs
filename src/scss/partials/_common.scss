@@ -102,3 +102,31 @@ img.card-img-top{
 .block{
   display: block;
 }
+.buscados{
+  height: 300px;
+  overflow-y: auto;
+  .sezione_ricerca{
+    margin-top: 20px;
+    padding: 0 10px;
+    @include flex-r-start-c;
+    img{
+      border-radius: 50%;
+      margin-right: 20px;
+      height: 40px;
+      width: 40px;
+    }
+    .text-section{
+      p{
+        margin-bottom: 0px;
+      }
+      small{
+        color: $color-grey-scuro;
+        font-size: 12px;
+      }
+    }
+    &:hover{
+      border: 3px solid $color-primary;
+      border-radius: 5px;
+    }
+  }
+}
