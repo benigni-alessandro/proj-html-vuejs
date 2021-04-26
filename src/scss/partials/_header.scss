@@ -4,7 +4,7 @@
     background-color: $color-white;
     height: 30px;
     .row{
-      .col-12{
+      .col-lg-12{
         padding: $padding-10-col;
         height: 30px;
         @include flex-r-spacebet-c;
@@ -43,7 +43,7 @@
     height: 122px;
     .row{
       height: 100%;
-      .col-12{
+      .col-lg-12{
         @include flex-r-c-c;
         height: 100%;
         img{
@@ -61,7 +61,7 @@
     background-color: $color-white;
     .row{
       height: 100%;
-      .col-12{
+      .col-lg-12{
         padding: $padding-10-col;
         height: 100%;
         @include flex-r-c-c;
@@ -131,7 +131,7 @@
     .row{
       --bs-gutter-x: 0px;
       height: 100%;
-      .col-12{
+      .col-lg-12{
         height: 100%;
         .jumbo-img{
           background-position: center center;
@@ -173,6 +173,7 @@
             }
             .foodie_journal{
               background-color: $color-white;
+              max-width: 100%;
               position: absolute;
               bottom: 0;
               left: 50%;

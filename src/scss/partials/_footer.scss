@@ -10,7 +10,7 @@
     background-color: $color-white;
     @include flex-col-center-center;
     .row{
-      .col-12{
+      .col-lg-12{
         @include flex-col-center-center;
         .subscribe_content{
           @include flex-col-center-center;
@@ -50,7 +50,7 @@
     max-width: 100%;
     height: 220px;
     .row{
-      .col-12{
+      .col-lg-12{
         padding: 0px;
         @include flex-row-wrap;
         img{
@@ -68,10 +68,16 @@
     max-width: 100%;
     .row{
       height: 100%;
-      .col-12{
+      .col-lg-12{
         height: 100%;
         @include flex-r-c-start;
         padding: $padding-10-col;
+        @media screen and (min-width: $breackpoint-md) and (max-width: $breackpoint-lg){
+          padding: 10px;
+        }
+        @media screen and (min-width: $breackpoint-sm) and (max-width: $breackpoint-md){
+          padding: 10px;
+        }
         .logo-social{
           height: 230px;
           width: calc(100% / 4);
@@ -158,9 +164,10 @@
   }
   &.copyrights{
     height: 70px;
+    position: relative;
     .row{
       height: 100%;
-      .col-12{
+      .col-lg-12{
         position: relative;
         height: 100%;
         @include flex-r-c-c;
@@ -174,6 +181,12 @@
           border-radius: 50%;
           color: $color-white;
           background-color: $color-black;
+          @media screen and (min-width: $breackpoint-md) and (max-width: $breackpoint-lg){
+            left: -20px;
+          }
+          @media screen and (min-width: $breackpoint-sm) and (max-width: $breackpoint-md){
+            padding: 0px;
+          }
           &:hover{
             background-color: $color-primary;
           }
