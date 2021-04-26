@@ -41,8 +41,23 @@ var app = new Vue({
         titolo: '5 Waterside Restaurants in Istanbul for Special Events',
         immagine: './images/fi-water-side-rest-600x395.jpg'
       }
-    ]
+    ],
+    searched: [],
+    searchtext: '',
+    isBlock: false,
+    isNone: true,
   },
+  mounted(){
+      this.searched = [...this.tableimages, ...this.journal];
+      console.log(this.searched);
+  },
+  computed: {
+      filtered: function() {
+        return this.searched.filter((cercato) => {
+          return cercato.titolo.toLowerCase().match(this.searchtext.toLowerCase())
+        });
+      }
+    },
   methods:{
     data: function () {
       let data = new Date();
@@ -63,13 +78,21 @@ var app = new Vue({
         if(mm == 9) mm = "Ottobre";
         if(mm == 10) mm = "Novembre";
         if(mm == 11) mm = "Dicembre";
-        console.log(mm);
         let newd = `${gg} ${mm} ${aaaa}`;
       return newd;
     },
     torna_su: function () {
-      console.log(window);
       window.document.scrollingElement.scrollTop = 0;
+    },
+    buscar: function () {
+      this.isBlock= true;
+      this.isNone= false;
+    },
+    desappear_search:function () {
+      this.isBlock= false;
+      this.isNone= true;
+      this.searchtext = '';
     }
+
   }
 });

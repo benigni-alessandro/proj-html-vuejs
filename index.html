@@ -43,8 +43,25 @@
                 <li class="menu"><a ></a>Blog</li>
                 <li class="menu"><a ></a>About</li>
                 <li class="menu"><a ></a>Contact</li>
-                <li class="cerca"><a ></a><i class="fas fa-search"></i></li>
+                <li @click="buscar" class="cerca"><a ></a><i class="fas fa-search"></i></li>
               </ul>
+              <div class="visibility_searched" @mouseleave="desappear_search" :class="{ none: isNone}" :class="{ block: isBlock}">
+                <div class="ricerca">
+                  <div class="input-group flex-nowrap">
+                    <span class="input-group-text" id="addon-wrapping"><i class="fas fa-search"></i></span>
+                    <input v-model="searchtext" type="text" class="form-control" placeholder="Search..." aria-label="Username" aria-describedby="addon-wrapping">
+                  </div>
+                  <div v-if="searchtext" class="buscados">
+                    <div v-for="cercato in filtered" class="sezione_ricerca">
+                      <img :src="cercato.immagine" alt="">
+                      <div class="text-section">
+                        <p class="pointer hover_primary">{{cercato.titolo}}</p>
+                        <small>{{data()}}</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -428,7 +445,7 @@
               <div class="testo">
                 <small>© Copyright 2012 - 2021 | Avada Theme by ThemeFusion | All Rights Reserved | Powered by WordPress</small>
               </div>
-              <i @click="torna_su" class="fas fa-chevron-up hover_primary"></i>
+              <i @click="torna_su" class="fas fa-chevron-up pointer"></i>
             </div>
           </div>
         </div>

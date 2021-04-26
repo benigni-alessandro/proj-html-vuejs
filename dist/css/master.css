@@ -4,17 +4,25 @@
 .input-group.flex-nowrap span.input-group-text {
   border-right: 0px;
   background-color: white;
+  border-color: #f0eeeb;
 }
 .input-group.flex-nowrap span.input-group-text i {
   color: #afafaf;
 }
+.input-group.flex-nowrap span.input-group-text:focus .form-control {
+  outline: -webkit-focus-ring-color auto 0px;
+  border-color: #afafaf;
+}
 .input-group.flex-nowrap .form-control {
   border-left: 0px;
   color: #6a6b6c;
+  border-color: #f0eeeb;
 }
 .input-group.flex-nowrap .form-control:focus {
-  border-color: transparent;
+  border-left-color: transparent;
   box-shadow: 0px 0px 0px 0px;
+  outline: -webkit-focus-ring-color auto 0px;
+  border-color: #f0eeeb;
 }
 
 .align-center {
@@ -85,6 +93,14 @@ img.card-img-top {
 }
 .card .card-body .card-title:hover {
   color: #20ad96;
+}
+
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
 }
 
 .container.social_icons {
@@ -203,6 +219,52 @@ img.card-img-top {
 }
 .container.menu-bar .row .col-12 ul li.cerca {
   color: #20ad96;
+}
+.container.menu-bar .row .col-12 .ricerca {
+  height: auto;
+  background-color: white;
+  position: absolute;
+  right: 20%;
+  top: 68px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.container.menu-bar .row .col-12 .ricerca .input-group {
+  width: 200px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.container.menu-bar .row .col-12 .ricerca .buscados {
+  height: 300px;
+  overflow-y: auto;
+}
+.container.menu-bar .row .col-12 .ricerca .buscados .sezione_ricerca {
+  margin-top: 20px;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.container.menu-bar .row .col-12 .ricerca .buscados .sezione_ricerca img {
+  border-radius: 50%;
+  margin-right: 20px;
+  height: 40px;
+  width: 40px;
+}
+.container.menu-bar .row .col-12 .ricerca .buscados .sezione_ricerca .text-section p {
+  margin-bottom: 0px;
+}
+.container.menu-bar .row .col-12 .ricerca .buscados .sezione_ricerca .text-section small {
+  color: #6a6b6c;
+  font-size: 12px;
+}
+.container.menu-bar .row .col-12 .ricerca .buscados .sezione_ricerca:hover {
+  border: 3px solid #20ad96;
+  border-radius: 5px;
 }
 .container.jumbo {
   height: auto;
@@ -939,4 +1001,7 @@ img.card-img-top {
   border-radius: 50%;
   color: white;
   background-color: #333338;
+}
+.container.copyrights .row .col-12 .fas.fa-chevron-up:hover {
+  background-color: #20ad96;
 }
